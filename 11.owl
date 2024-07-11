@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:dc2416b3-0c08-4906-a905-ed8a249b6dd4"
+     xml:base="urn:webprotege:ontology:dc2416b3-0c08-4906-a905-ed8a249b6dd4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:dc2416b3-0c08-4906-a905-ed8a249b6dd4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/basedOn -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/basedOn">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:label>basedOn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>belongsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/containnedln -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/containnedln">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:label>containedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/mainProfile -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/mainProfile">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>mainProfile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/modifier_property -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/modifier_property">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>modifier_property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/relational_property -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/relational_property">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label>relational_property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/studySemester -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/studySemester">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>studySemester</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/studyYear -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/studyYear">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/EduYear"/>
+        <rdfs:label>stufyYear</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/usedlnProfile -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/usedlnProfile">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/relational_property"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>usedInProfile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/Discipline -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Discipline">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Independent_entity"/>
+        <rdfs:label>Discipline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Domain_entity -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Domain_entity">
+        <rdfs:label>Domain_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/EduYear -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/EduYear">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Independent_entity"/>
+        <rdfs:label>EduYear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Independent_entity -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Independent_entity">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Domain_entity"/>
+        <rdfs:label>Independent_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Profile -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Profile">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Independent_entity"/>
+        <rdfs:label>Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Semester -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Semester">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Independent_entity"/>
+        <rdfs:label>Semester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Track -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Track">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Independent_entity"/>
+        <rdfs:label>Track</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Value -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Value">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Domain_entity"/>
+        <rdfs:label>Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R3z1D2P31qz3uSL5ew298I -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R3z1D2P31qz3uSL5ew298I">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Цифровая культура</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R4Nqfl71a7x4oq7ujQdJ0Z -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R4Nqfl71a7x4oq7ujQdJ0Z">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Программирование</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R5UqgmUjbo1MlN8GO4LeFE -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R5UqgmUjbo1MlN8GO4LeFE">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Численные методы</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R5x325hhU59QTkSxRoF4Qz -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R5x325hhU59QTkSxRoF4Qz">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8mTSUjYAbKKPRCpzebSAat"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Семинар по специальности</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R6jWAFw80iEJU08nH0JYhb -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R6jWAFw80iEJU08nH0JYhb">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Цифровой практикум</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R755dHWX7DX0KdF6KUGVAya -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R755dHWX7DX0KdF6KUGVAya">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RmBR523b4l9DaJcTUtYj00"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Специальные главы биоинформатики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R76m7ieKt6tpN1ycFLtdBF -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R76m7ieKt6tpN1ycFLtdBF">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>Математическое моделирование и искусственный интеллект</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R78QAVqsQfW6RLrG4xcuXnq -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R78QAVqsQfW6RLrG4xcuXnq">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RFHEdYe6YLezZr7YQD61bW"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <webprotege:studyYear rdf:resource="http://webprotege.stanford.edu/R7XCj9Upz7P33g8kmLe2GND"/>
+        <rdfs:label>Соболевские пространства</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7XCj9Upz7P33g8kmLe2GND -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7XCj9Upz7P33g8kmLe2GND">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/EduYear"/>
+        <rdfs:label>курс 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7Xvq3zUr2jOvwbiJR7wN30 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7Xvq3zUr2jOvwbiJR7wN30">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Введение в биологию</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7akvQHtTP8IsPZm2q8ih3I -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7akvQHtTP8IsPZm2q8ih3I">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Физика 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7cYw4ko8WnhRbVTRA8XRZJ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7cYw4ko8WnhRbVTRA8XRZJ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Высшая математика</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7dUgPAF98OuQS28J1ifXja -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7dUgPAF98OuQS28J1ifXja">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RmBR523b4l9DaJcTUtYj00"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Матемаические модели в биологии</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7fBdCpuBN94xuzOZ6lzhLR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7fBdCpuBN94xuzOZ6lzhLR">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l"/>
+        <rdfs:label>Теоретическая механика 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7m9Ht5Bih7xCyiyTDiiUR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7m9Ht5Bih7xCyiyTDiiUR">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Машинное обучение</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7sky50gzc0VBliVWyB1aW0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7sky50gzc0VBliVWyB1aW0">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8WnPhxi6CdPCMdbdNi1EAi"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <webprotege:studyYear rdf:resource="http://webprotege.stanford.edu/R7XCj9Upz7P33g8kmLe2GND"/>
+        <rdfs:label>Компьютерная графика</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8CFSI8tcDnedMBUipnuUrQ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8CFSI8tcDnedMBUipnuUrQ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RFHEdYe6YLezZr7YQD61bW"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Метод конечных элементов 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8CiCt10J6xbtTXLPUrXKon -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8CiCt10J6xbtTXLPUrXKon">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RBi3X5gWIhml1hFSKbZG1ca"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Методы оптимизации 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Разработка пользовательского интерфейса 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8LApU0yqxJJoKjThPksJbc -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8LApU0yqxJJoKjThPksJbc">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RC4igkHTxVXFWkoHObEACIl"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Теория вычислительных алгоритмов</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8LNaCRXBbkPyUXDS63uZbv -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8LNaCRXBbkPyUXDS63uZbv">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R7akvQHtTP8IsPZm2q8ih3I"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae"/>
+        <rdfs:label>Физика 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8Tcg6j7TTWKMos1BQhXa57 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8Tcg6j7TTWKMos1BQhXa57">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Технология программирования</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8UIRzXlhLEAxBvcOsjD7Ry -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8UIRzXlhLEAxBvcOsjD7Ry">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RoRyQKeqFg5IgmX42g5z6A"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae"/>
+        <rdfs:label>Численные методы 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8WnPhxi6CdPCMdbdNi1EAi -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8WnPhxi6CdPCMdbdNi1EAi">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Технология прикладного программирования</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8bYdojL9ag7Jpr7bMzVgyB -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8bYdojL9ag7Jpr7bMzVgyB">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RBRrRpCsnLhK3db88z7rlOe"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Математическая теория управления</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8hMNZuplhxWVI0vLK8V5SM -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8hMNZuplhxWVI0vLK8V5SM">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RC4igkHTxVXFWkoHObEACIl"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Символический искусственный интеллект</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8mTSUjYAbKKPRCpzebSAat -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8mTSUjYAbKKPRCpzebSAat">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8Tcg6j7TTWKMos1BQhXa57"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8WnPhxi6CdPCMdbdNi1EAi"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Новые языки программирования</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8pT1BJLjFZRENquJvKYJg8 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8pT1BJLjFZRENquJvKYJg8">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Основы машинного обучения</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8sqZaenALEdH2rMX5qcvYz -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8sqZaenALEdH2rMX5qcvYz">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Линейная алгебра и аналитическая геометрия 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8wn57ZncgMJYeKxpzU3H9b -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8wn57ZncgMJYeKxpzU3H9b">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R97H1GjwcCurPA8OaeHSF5m"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae"/>
+        <rdfs:label>Математический анализ 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8ztyNQCL8462w0bZZmdihl -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8ztyNQCL8462w0bZZmdihl">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Математическое моделирование</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R97H1GjwcCurPA8OaeHSF5m -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R97H1GjwcCurPA8OaeHSF5m">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Математический анализ 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R99f1bErxD9SndV2BGQi7Rm -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R99f1bErxD9SndV2BGQi7Rm">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8CiCt10J6xbtTXLPUrXKon"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Методы оптимизации 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9I2ni33RmlguTQxBw7nNx0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9I2ni33RmlguTQxBw7nNx0">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv"/>
+        <webprotege:containnedln rdf:resource="http://webprotege.stanford.edu/R8hMNZuplhxWVI0vLK8V5SM"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Архитектура процессоров</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9QzcllXz9qReO3GomasI9r -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9QzcllXz9qReO3GomasI9r">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>Направление подготовки</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RDxUC3lYgqxpZMzJePFlf4u"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Язык кодирования С++</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9bw94cgscFa2wHdvyXjL9R -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9bw94cgscFa2wHdvyXjL9R">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/EduYear"/>
+        <rdfs:label>курс 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9i642BRCMaPThpoNJNUA4F -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9i642BRCMaPThpoNJNUA4F">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/EduYear"/>
+        <rdfs:label>курс 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9u2v4MuUe7fRSoR4uyL2q0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9u2v4MuUe7fRSoR4uyL2q0">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Теория массового обслуживания</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9vSKIr8msLg7OXvHYyMWyf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9vSKIr8msLg7OXvHYyMWyf">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Теория случайных функций</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9z6IdQ1fgooxCG2olW0duH -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9z6IdQ1fgooxCG2olW0duH">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RVHZpbkjIJW9wujzny7p19"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Грамматики и автоматы 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB9paGlUxmOrDA1S8wtApAp -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RB9paGlUxmOrDA1S8wtApAp">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Цифровая грамотность</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBAsYHXx9Rsg0AsVTg6SOWr -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBAsYHXx9Rsg0AsVTg6SOWr">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8wn57ZncgMJYeKxpzU3H9b"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l"/>
+        <rdfs:label>Математический анализ 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBB5v2kPzagbqON1N8EHaJR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBB5v2kPzagbqON1N8EHaJR">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R7sky50gzc0VBliVWyB1aW0"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Обработка и интерпретация сигналов</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBRrRpCsnLhK3db88z7rlOe -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBRrRpCsnLhK3db88z7rlOe">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RDeyMh8QFgsfCPkXogXpqVx"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Уравнения математической физики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBVdu5fh9ARLDMV8xnkVm4N -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBVdu5fh9ARLDMV8xnkVm4N">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9z6IdQ1fgooxCG2olW0duH"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Грамматики и автоматы 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBi3X5gWIhml1hFSKbZG1ca -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBi3X5gWIhml1hFSKbZG1ca">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8UIRzXlhLEAxBvcOsjD7Ry"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Численные методы 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBj5EnBOzY43Z1JVcmsz9T1 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBj5EnBOzY43Z1JVcmsz9T1">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Основы функционального анализа</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBr7DxZv5nPlm3ILj95LuVX -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBr7DxZv5nPlm3ILj95LuVX">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Интервальный анализ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBz71iY6iAO6sV8qLZCJ2Up -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBz71iY6iAO6sV8qLZCJ2Up">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8LNaCRXBbkPyUXDS63uZbv"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l"/>
+        <rdfs:label>Физика 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC4igkHTxVXFWkoHObEACIl -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RC4igkHTxVXFWkoHObEACIl">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RBAsYHXx9Rsg0AsVTg6SOWr"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rep0YSUfuMzQZBQnUPkZhx"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Дискретная математика</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC8fQ1ScBdOHnN6niVXYZIG -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RC8fQ1ScBdOHnN6niVXYZIG">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Технология системного программирования</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCAbsfSM1EDfPcT8KKVs6fZ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCAbsfSM1EDfPcT8KKVs6fZ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rep0YSUfuMzQZBQnUPkZhx"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Теория вероятностей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCQpzwA7RV7cdLKAaIUAMDH -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCQpzwA7RV7cdLKAaIUAMDH">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RCyBzLxzUXpNI2yFidb3cO5"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Язык программирования Java</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCUpgLQxItd3Qcnup3VSRbj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCUpgLQxItd3Qcnup3VSRbj">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8CFSI8tcDnedMBUipnuUrQ"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Метод конечных элементов 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCXEdVyHggpzecyBDz23VV4 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCXEdVyHggpzecyBDz23VV4">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R755dHWX7DX0KdF6KUGVAya"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Дополнительные разделы биоинформатики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RClBgHw0iM7qjcqRSUxEKPj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RClBgHw0iM7qjcqRSUxEKPj">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/EduYear"/>
+        <rdfs:label>курс 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCstl3AueRQYNjOHgsXtjTS -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCstl3AueRQYNjOHgsXtjTS">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Машина опорных векторов</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCvmzqq6ajpQ3rTvmBB5h50 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCvmzqq6ajpQ3rTvmBB5h50">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>Биоинформатика</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCyBzLxzUXpNI2yFidb3cO5 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCyBzLxzUXpNI2yFidb3cO5">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RDxUC3lYgqxpZMzJePFlf4u"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Проектирование данных в приложениях</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDeyMh8QFgsfCPkXogXpqVx -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDeyMh8QFgsfCPkXogXpqVx">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RUXLIa36MIVGWWRjWxRBmK"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Основы математической физики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDjgWqGGLAwL9OL9UAHmKCi -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDjgWqGGLAwL9OL9UAHmKCi">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R9W3C7lstwk79Wt1EWy3WW7"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Наука программирования</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDp4DwKdruWFd0DdeB5z7Qa -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDp4DwKdruWFd0DdeB5z7Qa">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Вариационное исчисление</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDqk2hoTQlsoMJNwZWZ0YVc -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDqk2hoTQlsoMJNwZWZ0YVc">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8D4VQKVDo8ptiT8IVQfjCv"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Разработка пользовательского интерфейса 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDxUC3lYgqxpZMzJePFlf4u -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDxUC3lYgqxpZMzJePFlf4u">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RoRyQKeqFg5IgmX42g5z6A"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l"/>
+        <rdfs:label>Алгоритмы и структуры данных</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/REWNolkwBIhxSAVaw8UuBL -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/REWNolkwBIhxSAVaw8UuBL">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8Tcg6j7TTWKMos1BQhXa57"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R8D2F5Jfhw0YS3kxilDWmEm"/>
+        <rdfs:label>Языки программирования Python и R</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RFHEdYe6YLezZr7YQD61bW -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RFHEdYe6YLezZr7YQD61bW">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RBj5EnBOzY43Z1JVcmsz9T1"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Функциональный анализ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RTN1LNjtb2KQUy3emUyIPE -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RTN1LNjtb2KQUy3emUyIPE">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Машинное обучение и искусственный интеллект</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RUXLIa36MIVGWWRjWxRBmK -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RUXLIa36MIVGWWRjWxRBmK">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R7fBdCpuBN94xuzOZ6lzhLR"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Теоретическая механика 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RVHZpbkjIJW9wujzny7p19 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RVHZpbkjIJW9wujzny7p19">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RC4igkHTxVXFWkoHObEACIl"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Приложения дискретной математики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RWafR1J7a5JjIASq6n6D2F -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RWafR1J7a5JjIASq6n6D2F">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t"/>
+        <rdfs:label>Комплексный анализ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rbav5gJpP49tebgqdX4ZNn -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rbav5gJpP49tebgqdX4ZNn">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Profile"/>
+        <rdfs:label>Системное программирование</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RcQ3mg5tixvmlBVKPx5E4t">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RdJRm2QvkM0m7r1TSukxvT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RCAbsfSM1EDfPcT8KKVs6fZ"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Математическая статистика</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rep0YSUfuMzQZBQnUPkZhx -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rep0YSUfuMzQZBQnUPkZhx">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R8sqZaenALEdH2rMX5qcvYz"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae"/>
+        <rdfs:label>Линейная алгебра и аналитическая геометрия 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rf7g06H7iBlnlb1qoUvFka -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rf7g06H7iBlnlb1qoUvFka">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R7sky50gzc0VBliVWyB1aW0"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7JkOwOL3v3iXXKdwV3RRQ5"/>
+        <rdfs:label>Алгоритмы компьютерной графики</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rk4iVfA8oojDe0AoEeaCKq">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RBAsYHXx9Rsg0AsVTg6SOWr"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Математический анализ 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RkXcgmw1ZrsaFXizptFcoq -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RkXcgmw1ZrsaFXizptFcoq">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:containnedln rdf:resource="http://webprotege.stanford.edu/RB9paGlUxmOrDA1S8wtApAp"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R7xTnH9V33neNgjdjwO53EP"/>
+        <rdfs:label>Введение в информационные технологии</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RksXRujkrGNX3O0Y64Ec88 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RksXRujkrGNX3O0Y64Ec88">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Track"/>
+        <rdfs:label>Предметные области - механика, физика, биология</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RmBR523b4l9DaJcTUtYj00 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RmBR523b4l9DaJcTUtYj00">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/R83dFde1qt0xoFkB6vUwL73"/>
+        <rdfs:label>Общая биология</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Ro0WExkCJMuMzCQfwef2rv -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Ro0WExkCJMuMzCQfwef2rv">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RDxUC3lYgqxpZMzJePFlf4u"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RO45yz0EnXHbYVrQKXBcUf"/>
+        <rdfs:label>Базы данных</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RoRyQKeqFg5IgmX42g5z6A -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RoRyQKeqFg5IgmX42g5z6A">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Discipline"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/R6jWAFw80iEJU08nH0JYhb"/>
+        <webprotege:basedOn rdf:resource="http://webprotege.stanford.edu/RB9paGlUxmOrDA1S8wtApAp"/>
+        <webprotege:studySemester rdf:resource="http://webprotege.stanford.edu/RCdkKzhUmAF7pUWPXWLYSae"/>
+        <rdfs:label>Введение в профессиональную деятельность</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RqwB8K8ghhu38TbSgL1h3l">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Semester"/>
+        <rdfs:label>семестр 3</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
